@@ -1,4 +1,5 @@
-{% load static %}
+{% extends "layout.html" %}
+<!--{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,13 +7,39 @@
             movies land
         </title>
         <link href ="{% static 'style.css' %}" rel ="stylesheet" type="text/css">
-    </head>
-    <body>
-        <h1>movies land</h1>
-        {% for m in movies %}
-        <p>{{m.title}}</p>
-        <p>{{m.author}}</p>
-        <p>{{m.genre}}</p>  
-        {% endfor %}      
-    </body>
-</html>
+    </head>-->
+{% block body %}
+    <h1>Crepe factory</h1>
+    <img src="{% static 'images/logo.jpg' %}" alt="logo" width =1330px height=600px center>
+    <div id="description" >
+         Crêpes Factory est simplement une crêpe d'exception. Une pâte faite a bases de différentes farines de trés hautes qualitées, des produits frais directement séléctionnés chez les meilleur fournisseurs et enfin des sauces faites maison, tout ceci lui confére un gout unique! Soyez nombreux à venir partager avec nous l’unique expérience Crêpes Factory.
+    </div>
+    <div id ="menu">  
+        <ul id="list1">
+            <p id ="menu1"> menu </p>
+            {% for i in menu %}
+                <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div id= "contact">
+        
+        <ul id="list2">
+            <p id="contact1">contacts</p>
+            <li>tel:99 960 994  </li>
+            <li>mail:crepesfactorytunis@gmail.com</li>
+            <li>page facebook: Crêpes Factory</li>
+        </ul>
+    </div>
+    <div id="adresses">
+        <ul id ="list3">
+            <p id="adresses1">Adresses</p>
+            {% for a in adresses %}
+                <li>{{a}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+{% endblock %}  
+
+   
