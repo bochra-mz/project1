@@ -18,7 +18,9 @@
         <ul id="list1">
             <p id ="menu1"> menu </p>
             {% for i in menu %}
-                <li>{{i}}</li>
+                <li>
+                    <a href="{{i}}" title="{{i}}" >{{i}}</a>
+                </li>
             {% endfor %}
         </ul>
     </div>

@@ -11,6 +11,9 @@ def index(request):
 def crepe_sucree( request):
     return render (request,'crepe_sucre.html')
 
+def crepes_salees(request):
+    return render (request,'crepes salées.html')
+
 """class Films:
     def __init__(self,title,author,genre):
         self.title=title
