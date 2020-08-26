@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            movies land
+        </title>
+        <link href ="{% static 'style.css' %}" rel ="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>movies land</h1>
+        {% for m in movies %}
+        <p>{{m.title}}</p>
+        <p>{{m.author}}</p>
+        <p>{{m.genre}}</p>  
+        {% endfor %}      
+    </body>
+</html>
