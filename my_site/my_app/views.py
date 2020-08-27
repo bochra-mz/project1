@@ -8,11 +8,14 @@ adresses=['Menzah5','Aouina']
 def index(request):
     return render (request,'index.html',{'menu':menu, 'adresses':adresses})
 
-def crepe_sucree( request):
-    return render (request,'crepe_sucre.html')
+def crepes_sucrees( request):
+    return render (request,'crepes sucrées.html')
 
 def crepes_salees(request):
     return render (request,'crepes salées.html')
+
+def cheescake(request):
+    return render(request, 'cheescake.html' )
 
 """class Films:
     def __init__(self,title,author,genre):

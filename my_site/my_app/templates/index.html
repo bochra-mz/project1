@@ -17,11 +17,15 @@
     <div id ="menu">  
         <ul id="list1">
             <p id ="menu1"> menu </p>
-            {% for i in menu %}
-                <li>
-                    <a href="{{i}}" title="{{i}}" >{{i}}</a>
-                </li>
-            {% endfor %}
+            <li>
+                <a href="{% url 'crepes sucrées' %}">crepes sucrées</a>
+            </li>
+            <li>
+                <a href="{% url 'crepes salées' %}" title="crepes salées">crepes salées</a>
+            </li>
+            <li>
+                <a href="{% url 'cheescake' %}">cheescake</a>
+            </li>
         </ul>
     </div>
     <div id= "contact">
