@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block body %}
+<h2>passer une commande</h2>
+<form method="POST" class='post-form'>
+    {% csrf_token %}
+    {{form1.as_p}}
+    <button type="submit" class="save btn">enregistrer</button>
+</form>
+{% endblock %}

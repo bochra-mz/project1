@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from my_app.models import crepe, categorie, clients
+from .formulaire import menuu, validation 
+
+
 # Create your views here.
 menu= ['crepes sucrées','crepes salées','cheescake']
 adresses=['Menzah5','Aouina']
@@ -17,6 +21,29 @@ def crepes_salees(request):
 def cheescake(request):
     return render(request, 'cheescake.html' )
 
+def commande(request):
+    sucree=crepe.objects.filter(cat_id=2)
+    salee=crepe.objects.filter(cat_id=1)
+    chees=crepe.objects.filter(cat_id=3)
+    return render(request,'commande.html',{'sucree':sucree, 'salee':salee, 'chees':chees})
+
+def cmd(request):
+    if request.method=='POST':
+        form1=menuu(request.POST).save()
+        return redirect('cmd/val')
+    else:
+        form1=menuu()
+    return render (request,'cmd.html',{'form1':form1})
+
+def val(request):
+    if request.method=='POST':
+        form2=validation(request.POST).save()
+        return redirect('cmd')
+    else:
+        form2=validation()
+    return render (request,'val.html',{'form2':form2})
+
+    
 """class Films:
     def __init__(self,title,author,genre):
         self.title=title
