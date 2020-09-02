@@ -30,10 +30,10 @@ def commande(request):
 def cmd(request):
     if request.method=='POST':
         form1=menuu(request.POST).save()
-        return redirect('cmd/val')
+        return redirect ('cmd/val')
     else:
         form1=menuu()
-    return render (request,'cmd.html',{'form1':form1})
+    return render (request,'cmd.html',{'form1':form1 })
 
 def val(request):
     if request.method=='POST':
@@ -42,6 +42,7 @@ def val(request):
     else:
         form2=validation()
     return render (request,'val.html',{'form2':form2})
+
 
     
 """class Films:

@@ -135,5 +135,53 @@ td{
 
 h2{
     text-align: center;
-    color: rgb(70, 45, 94)
+    color: rgb(203, 178, 226)
 }
+
+#form1{
+    background-image: url('images/fond13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color : rgb(210, 210, 224);
+    width: 800px;
+    height: 400px;
+    
+}
+
+#id_commande{
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    background: wheat
+}
+input{
+    vertical-align: middle
+}
+label{
+    font : .8em "typewriter", sans-serif;
+}
+
+#id_mode_de_livraison{
+    width: 200px;
+    height: 80px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#form2{
+    background-image: url('images/fond13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color : rgb(210, 210, 224);
+    width: 800px;
+    height: 400px;
+    

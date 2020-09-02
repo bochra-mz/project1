@@ -5,7 +5,7 @@ from .models import clients
 class menuu(ModelForm):
     class Meta:
         model=clients
-        fields=['commande','mode_de_livraison']
+        fields=['id','commande','mode_de_livraison']
 
 
 class validation(ModelForm):

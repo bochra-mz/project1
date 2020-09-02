@@ -35,8 +35,11 @@ class clients(models.Model):
     commande=models.ManyToManyField(crepe,blank=True)
     mode_de_livraison=models.ManyToManyField(livraison,blank=True)
     point_de_vente=models.ForeignKey(point_de_vente,on_delete=models.CASCADE , blank=True , null=True)
+   
     def __str__(self):
         return self.name
+    
+
 
 
 
