@@ -1,16 +1,15 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from my_app.models import crepe, categorie, clients
+from my_app.models import menu, categorie, clients
 from .formulaire import menuu, validation 
 
 
 # Create your views here.
-menu= ['crepes sucrées','crepes salées','cheescake']
 adresses=['Menzah5','Aouina']
 
 
 def index(request):
-    return render (request,'index.html',{'menu':menu, 'adresses':adresses})
+    return render (request,'index.html',{'adresses':adresses})
 
 def crepes_sucrees( request):
     return render (request,'crepes sucrées.html')
@@ -22,10 +21,10 @@ def cheescake(request):
     return render(request, 'cheescake.html' )
 
 def commande(request):
-    sucree=crepe.objects.filter(cat_id=2)
-    salee=crepe.objects.filter(cat_id=1)
-    chees=crepe.objects.filter(cat_id=3)
-    return render(request,'commande.html',{'sucree':sucree, 'salee':salee, 'chees':chees})
+    sucree=menu.objects.filter(cat_id=2)
+    salee=menu.objects.filter(cat_id=1)
+    cheese=menu.objects.filter(cat_id=3)
+    return render(request,'commande.html',{'sucree':sucree, 'salee':salee, 'cheese':cheese})
 
 def cmd(request):
     if request.method=='POST':
@@ -42,6 +41,7 @@ def val(request):
     else:
         form2=validation()
     return render (request,'val.html',{'form2':form2})
+
 
 
     

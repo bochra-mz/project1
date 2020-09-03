@@ -9,7 +9,7 @@ class categorie(models.Model):
     def __str__(self):
         return self.name
 
-class crepe (models.Model):
+class menu(models.Model):
     name= models.CharField(max_length=100 )
     cat=models.ForeignKey(categorie,on_delete=models.CASCADE,related_name='type')
     ingredients=models.CharField(max_length=200)
@@ -32,7 +32,7 @@ class livraison(models.Model):
 class clients(models.Model):
     name = models.CharField(max_length=100)
     num = models.IntegerField(blank=True, null=True)
-    commande=models.ManyToManyField(crepe,blank=True)
+    commande=models.ManyToManyField(menu,blank=True)
     mode_de_livraison=models.ManyToManyField(livraison,blank=True)
     point_de_vente=models.ForeignKey(point_de_vente,on_delete=models.CASCADE , blank=True , null=True)
    

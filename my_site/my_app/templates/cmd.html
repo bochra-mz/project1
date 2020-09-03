@@ -5,7 +5,7 @@
     <h2>passer une commande</h2>
     <form method="POST" class='post-form'>
         {% csrf_token %}
-        {{form1.as_p}}
+        {{ form1.as_ul }} 
         <button type="submit" class="save btn">enregistrer</button>
     </form>
 </body>

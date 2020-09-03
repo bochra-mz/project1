@@ -34,9 +34,15 @@
         
         <ul id="list2">
             <p id="contact1">contacts</p>
-            <li>tel:99 960 994  </li>
-            <li>mail:crepesfactorytunis@gmail.com</li>
-            <li>page facebook: Crêpes Factory</li>
+            <li>
+                <img src="{% static 'images/phone.png' %}" alt="icon1" height="30px" width="30px">
+                tel:99 960 994  </li>
+            <li>
+                <img src="{% static 'images/mail.png' %}" alt="icon2" height="30" width="30">
+                mail:crepesfactorytunis@gmail.com</li>
+            <li>
+                <img src="{% static 'images/fb.png' %}" alt="icon3" height="30 " width="30">
+                page facebook: Crêpes Factory</li>
         </ul>
     </div>
     <div id="adresses">
@@ -54,8 +60,9 @@
         </ul>
     </div>
     <div id="commande">
+        <img src="{% static 'images/panier.jpg' %}" alt="icon4" height="50" width="50">
         <a href="{% url 'cmd' %}">passer une commande en ligne</a>
-
+        <img src="{% static 'images/panier.jpg' %}" alt="icon4" height="50" width="50">
     </div>
 </body>
 {% endblock %}  
