@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+<!--{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            movies land
+        </title>
+        <link href ="{% static 'style.css' %}" rel ="stylesheet" type="text/css">
+    </head>-->
+{% block body %}
+<body id="fond1">
+    <img src="{% static 'images/logo.jpg' %}" alt="logo" width =100% height=600px center>
+    <h1> crepe factory </h1>
+    <div id="description" >
+         Crêpes Factory est simplement une crêpe d'exception. Une pâte faite a bases de différentes farines de trés hautes qualitées, des produits frais directement séléctionnés chez les meilleur fournisseurs et enfin des sauces faites maison, tout ceci lui confére un gout unique! Soyez nombreux à venir partager avec nous l’unique expérience Crêpes Factory.
+    </div>
+    <div id="commande">
+        <a href="{% url 'cmd' %}">passer une commande en ligne</a>
+    </div>
+
+</body>
+{% endblock %}  
+
+   

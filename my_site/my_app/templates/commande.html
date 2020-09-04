@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% load static %} 
+{% block body %}
+<body id='fond2'>
+    <h1> Passer une commande </h1>
+    <table>
+        <thead>
+            <h2>Nos crepes salées</h2>
+        </thead>
+        <tbody>
+            {% for c in salee %}
+                <tr> 
+                    <td id="name">
+                        <p>{{c.name}}</p>
+                        <img src="{{c.img}}"  width="20" height="20">
+                    </td>
+                    <td id='ingredients'>{{c.ingredients}}</td>
+                    <td id='commander'>ajouter au panier</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    <table>
+        <thead>
+            <h2>Nos crepes sucrées</h2>
+        </thead>
+        <tbody>
+            {% for c in sucree %}
+                <tr> 
+                    <td id="name">
+                        <p>{{c.name}}</p>
+                        <img src="{{c.img}}"  width="20" height="20">
+                    </td>
+
+                    <td id="ingredients">{{c.ingredients}}</td>
+                    <td id='commander'>ajouter au panier</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <h2>Nos cheescake</h2>
+        </thead>
+        <tbody>
+            {% for c in chees %}
+                <tr> 
+                    <td id="name">
+                        <p>{{c.name}}</p>
+                        <img src="{{c.img}}"  width="20" height="20">
+                    </td>
+                    <td id='ingredients'>{{c.ingredients}}</td>
+                    <td id="commander">ajouter au panier</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+{% endblock %}

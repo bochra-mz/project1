@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+<body id="menu_page">
+    <div id ="menu">  
+        <ul id="list1">
+            <p id ="menu1"> menu </p>
+            <li>
+                <a href="{% url 'crepes sucrées' %}">crepes sucrées</a>
+            </li>
+            <li>
+                <a href="{% url 'crepes salées' %}" title="crepes salées">crepes salées</a>
+            </li>
+            <li>
+                <a href="{% url 'cheescake' %}">cheescake</a>
+            </li>
+        </ul>
+    </div>
+</body>
+{% endblock %}
+    

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<body id="form2">
+    <div>total:</div>
+    <form method="POST" class='post-form'>
+        {% csrf_token %}
+        {{form2.as_p}}
+        <button type="submit" class="save btn">valider</button>
+    </form> 
+</body>
+{% endblock %}

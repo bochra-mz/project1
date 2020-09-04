@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block body %}
+    <body id="adresses_page">
+        <div id="adresses">
+            <ul id ="list3">
+                <p id="adresses1">Adresses</p>
+                <p style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/local.png' %}" alt="icon" width="40" height="40">
+                    <a href="https://www.google.com/maps/place/crepes+Factory+%22L'Aouina%22/@36.8562429,10.1795893,13z/data=!4m8!1m2!2m1!1screpe+factory+aouina!3m4!1s0x12e2cb2664e1688d:0xb0b22dc2ce9277b1!8m2!3d36.8578131!4d10.2541786?hl=fr">Aouina</a>
+                </p>
+                <p style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/local.png' %}" alt="icon" width="40" height="40">
+                    <a href="https://www.google.com/maps/place/Crepes+Factory+%22+Menzeh+5+%22/@36.854683,10.1728503,17z/data=!3m1!4b1!4m5!3m4!1s0x12fd34a95973b33d:0x319e56a1b04f048e!8m2!3d36.854683!4d10.175039?hl=fr">Menzah 5</a>
+                </p>
+            </ul>
+        </div>
+    </body>
+{% endblock %}
