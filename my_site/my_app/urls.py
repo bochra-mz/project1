@@ -8,4 +8,9 @@ urlpatterns= [
     path("commande" ,views.commande , name="commande"),
     path("cmd",views.cmd,name='cmd'),
     path("cmd/val", views.val,name="val"),
+    path('menu', views.menu,name='menu'),
+    path('pdv', views.pdv,name='pdv'),
+    path('contacts',views.contacts, name='contacts'),
+    path('compte',views.compte, name="compte"),
+    path('login', views.login, name="login"),
 ]

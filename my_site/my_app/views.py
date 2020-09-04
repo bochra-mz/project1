@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse , HttpResponseRedirect
 from my_app.models import crepe, categorie, clients
 from .formulaire import menuu, validation 
+from django.urls import reverse
 
 
 # Create your views here.
-menu= ['crepes sucrées','crepes salées','cheescake']
+
 adresses=['Menzah5','Aouina']
 
 
@@ -43,13 +44,20 @@ def val(request):
         form2=validation()
     return render (request,'val.html',{'form2':form2})
 
+def menu(request):
+    return render(request, 'menu.html' )
+
+def contacts(request):
+    return render(request, 'contacts.html' )
+
+def pdv(request):
+    return render (request, 'pdv.html')
+
+def compte(request):
+    if  request.user.is_authenticated :
+        return HttpResponseRedirect (reverse("login"))
+            
+def login(request):
+    return render(request, "login.html")
 
     
-"""class Films:
-    def __init__(self,title,author,genre):
-        self.title=title
-        self.author=author
-        self.genre=genre
-    
-movies=[Films('hunger game','Suzanne Collins','science fiction' ),Films('It','	Andy Muschietti','horror'),Films('bird box','Susanne Bier','thriller')]
-"""

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block body %}
+    <body id="contact_page">
+        <div id= "contact">
+            <ul id="list2">
+                <p id="contact1">contacts</p>
+                <li style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/phone.png' %}" alt="icon1" height="50px" width="50px">
+                    tel: 99 960 994 
+                 </li>
+                <li style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/mail.jpg' %}" alt="icon2" height="50" width="50">
+                    mail: crepesfactorytunis@gmail.com
+                </li>
+                <li style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/fb.png' %}" alt="icon3" height="50 " width="50">
+                    page facebook: Crêpes Factory
+                </li>
+                <li style="margin-top: 50px; margin-bottom: 50px;">
+                    <img src="{% static 'images/insta.png' %}" alt="icon40" height="50" width="50">
+                    instagram:crepesfactorytunis
+                </li>
+            </ul>
+        </div>
+    </body>
+{% endblock %}

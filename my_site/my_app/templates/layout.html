@@ -3,6 +3,36 @@
 <html lang='en'>
     <head>
         <title>crepe factory</title>
+        <div id="head">
+            <a href="{% url 'index' %}"><img src="{% static 'images/fond6.png' %}" alt="logo" height="100" width="100" style="float: left"></a>
+            
+            <ul id="nav">
+                <li>
+                    <img src="{% static 'images/menu.jpg' %}" alt="icon1" height="40" width4=40>
+                    <a href="{% url 'menu' %}" id="lien">
+                        Menu</a>
+                </li>
+                <li>
+                    <img src="{% static 'images/loc.jpg' %}" alt="icon2" height="40" width4=40>
+                    <a href="{% url 'pdv' %}" id="lien">
+                        Nos points de vente
+                    </a>
+                </li>
+                <li>
+                    <img src="{% static 'images/contact.png' %}" alt="icon3" height="40" width4=40>
+                    <a href="{% url 'contacts' %}" id="lien">contact
+                    </a>
+                </li>
+                <li>
+                    <img src="{% static 'images/compte.png' %}" alt="icon4"height="40" width4=40 >
+                    <a href="{% url 'compte' %}" id="lien">Mon compte</a>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        
         <link href ="{% static 'style.css' %}" rel ="stylesheet" type="text/css">
     </head>
     {% block body %}

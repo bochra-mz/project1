@@ -6,6 +6,12 @@
 
 }
 
+#head{
+    background-color: rgb(66, 60, 58);
+    width:100%;
+    height:100px;
+}
+
 #fond2{
     background-image: url('images/fond12.jpg');
     background-repeat: no-repeat;
@@ -21,82 +27,118 @@ h1 {
 #description{
     color: teal  ; 
     text-align:  center ;
-    font-size: 25px
+    font-size: 35px
 }
 #list1{
     font-size: 30px;
-    text-align: center;
+    margin:  auto
 
+}
+#menu_page{
+    background-image: url(images/fond41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu{
-    background-color: silver;
-    width: 300px;
-    height:250px;
-    padding: 10px;
-    border: 5px solid gray ;
-    margin:0;
+    
     margin-left:70px;
-    margin-top: 60px
+    margin-top: 60px;
+    
 
 }
 #menu1{
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(92, 12, 39); 
+    margin-left: 100px;
+    text-decoration: underline;
+}
+#menu li{
+    list-style-type: square;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(81, 110, 110, 0.473);
+    
 }
 
+#contact_page{
+    background-image: url('images/fond15.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #contact{
-    background-color:rgb(145, 106, 119);
-    width: 400px;
-    height:250px;
+    float: right;
+    background-color:rgb(240, 223, 229);
+    width: 500px;
+    height:500px;
     padding: 10px;
-    border: 5px solid rgb(82, 52, 82) ;
+    border: 5px solid rgb(216, 193, 216) ;
     margin-top:60px;
-    position: relative;
-    right:-430px;
-    top :-340px
+    box-shadow: 10px 5px 5px rgb(88, 84, 84);
+    margin-right: 30px;
+    border-radius: 10px;
+    
 }
 #list2{
     font-size: 25px;
-    text-align: center;
+    
 
 }
 #contact1{
     font-size: 30px;
-    color: rgb(92, 12, 39)
+    color: rgb(92, 12, 39);
+    text-align: center
 }
  
-#adresses{
-    background-color:pink;
-    width: 350px;
-    height:250px;
-    padding: 10px;
-    border: 5px solid palevioletred  ;
-    margin-top: 60px;
-    position: relative;
-    right:-885px;
-    top :-680px
+#adresses_page{
+    background-image: url(images/fond34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+#adresses{
+
+    background-color:rgb(251, 255, 218);
+    width: 400px;
+    height:350px;
+    padding: 10px;
+    border: 5px solid rgb(248, 231, 154)  ;
+    margin-top: 100px;
+    margin-right:auto;
+    margin-left: auto;
+    border-radius: 10px;
+    
+
+}
 #list3{
     font-size: 30px;
-    text-align: center;
+    
 
 }
 #adresses1{
     font-size: 30px;
-    color: rgb(92, 12, 39)
+    color: rgb(92, 12, 39);
+    text-align: center;
 }
 
 #commande{
-    background-color: rgb(162, 200, 223);
+    background-color: rgb(223, 179, 162);
     padding: 10px;
-    border : 5px solid rgb(110, 199, 250);
+    border : 5px solid rgb(240, 164, 128);
     font-size: 40px ;
-    position: relative;
-    top:-600px;
     text-align: center;
     color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -146,8 +188,7 @@ h2{
     text-align: center;
     font-size: 30px;
     color : rgb(210, 210, 224);
-    width: 800px;
-    height: 400px;
+    
     
 }
 
@@ -182,6 +223,49 @@ label{
     text-align: center;
     font-size: 30px;
     color : rgb(210, 210, 224);
-    width: 800px;
-    height: 400px;
     
+}
+
+#nav{
+    text-align: right;
+    position: relative;
+    padding-top:20px;
+    margin-top:20px;
+    text-align: center;
+
+}
+#nav li {
+    display: inline;
+    list-style-type: square;
+    color: wheat;
+    padding: 5px;
+    margin: 5px;
+    margin-top: auto;
+    padding-top: 0px;
+    font-size: 20px;
+
+}
+
+#nav a {
+	display:inline-block;
+	margin: 0 30px;
+}
+    
+#lien{
+    color:wheat;
+    font-size: 20px;
+    
+}
+#mon_compte{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(15, 15, 88); 
+    margin-top: 30px;
+}
+#form3{
+    float: right ;
+    margin-top: 50px;
+    height: 200px;
+}
+
+
